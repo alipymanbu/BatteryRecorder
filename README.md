@@ -1,67 +1,26 @@
-[English](README.en.md) | 简体中文
-
 # BatteryRecorder
 
-## 介绍
+本仓库是「BatteryRecorder」的安卓版本获取入口，附使用资料索引。
 
-一个电池功率记录 App，旨在使用更低的 CPU 开销来记录更精确的功率数据，并为用户提供较为精准的续航预测。
+## 安装文件资源（夸克网盘）
 
-## 功能
+> **BatteryRecorder 安装文件资源（夸克网盘）**：[https://pan.quark.cn/s/1f1051c1c4a7](https://pan.quark.cn/s/1f1051c1c4a7)
 
-- 精细化记录调参，更切合你的需求
-- 原始、趋势功耗图，各种需求都能覆盖
-- 自定义曲线隐藏
-- 息屏功耗记录，探索🧐未知场景
+## 官方项目
 
-## 使用文档
-- [文档](https://battrec.itosang.com/)
+- 上游项目：[Itosang/BatteryRecorder](https://github.com/Itosang/BatteryRecorder)
 
+## 更多资料
 
-## ToDo
+- [下载与安装教程](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BatteryRecorder/%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+- [功率显示校准方法](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BatteryRecorder/%E5%8A%9F%E7%8E%87%E6%98%BE%E7%A4%BA%E6%A0%A1%E5%87%86%E6%96%B9%E6%B3%95.md)
+- [历史记录导出与图表操作](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BatteryRecorder/%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%9B%BE%E8%A1%A8%E6%93%8D%E4%BD%9C.md)
+- [同名软件与版本怎么分辨](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BatteryRecorder/%E5%90%8C%E5%90%8D%E8%BD%AF%E4%BB%B6%E4%B8%8E%E7%89%88%E6%9C%AC%E6%80%8E%E4%B9%88%E5%88%86%E8%BE%A8.md)
+- [启动服务与开始记录](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BatteryRecorder/%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E4%B8%8E%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BD%95.md)
+- [常见问题与兼容设置](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BatteryRecorder/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E5%85%BC%E5%AE%B9%E8%AE%BE%E7%BD%AE.md)
+- [续航预测数据不足怎么解决](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BatteryRecorder/%E7%BB%AD%E8%88%AA%E9%A2%84%E6%B5%8B%E6%95%B0%E6%8D%AE%E4%B8%8D%E8%B6%B3%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3.md)
+- [全部软件目录](https://github.com/alipymanbu/Android/blob/master/%E5%85%A8%E9%83%A8%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95.md)
 
-### app
+---
 
-- [x] adb 启动 用户引导
-- [x] 分 app 续航预测
-- [x] 分场景预测续航
-- [x] 曲线放大缩小
-- [x] 临时隐藏某条曲线
-- [x] BOOT_COMPLETED 自启动
-- [x] 日志导出
-
-### server
-
-- [x] 解决 Monitor 唤醒锁异常(实际为 callback 阻塞)
-- [x] 监听 app 安装，并在适当时机重启 Server
-- [x] 重启 server 时，续接之前 server 的状态
-- [x] 额外电压记录
-- [x] 电池温度信息 `/sys/class/power_supply/battery/temp` 记录
-- ~~[ ] 亮屏判断改为以屏幕亮度为准~~
-- [x] 日志导出
-- [x] 优化 needDeleteSegment 判断
-- [x] app 服务
-
-### ext
-
-- [ ] 开机功耗曲线
-- ~~[ ] 充电复位~~
-
-## 下载
-
-- [GitHub Releases](https://github.com/Itosang/BatteryRecorder/releases)
-- [GitHub Actions](https://github.com/Itosang/BatteryRecorder/actions)
-
-## 捐赠
-
-如果这个项目对你有帮助，欢迎通过下方收款码支持维护。收入会用于续费域名和日常维护支持。
-
-<img src="app/src/main/res/drawable-nodpi/donate_qr.jpg" alt="捐赠收款码" width="320" />
-
-## 反馈
-
-- [QQ 群](https://qm.qq.com/q/6q5etoYAuc)
-- [GitHub Issues](https://github.com/Itosang/BatteryRecorder/issues) (推荐)
-
-## 鸣谢
-
-- [RikkaW/HiddenApi](https://github.com/RikkaW/HiddenApi)
+> 本仓库由上游项目 fork 而来，原始说明见[上游仓库](https://github.com/Itosang/BatteryRecorder)。
