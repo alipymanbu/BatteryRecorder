@@ -1,8 +1,0 @@
-* [Home](README.md)
-* [Getting Started](getting-started.md)
-* [Calibration](calibration.md)
-* [Excluding High-load Apps](high-load-apps.md)
-* [Battery Life Prediction](prediction.md)
-* [History](history.md)
-* [Record Detail Charts](record-detail.md)
-* [Settings Provider](settings-provider.md)
